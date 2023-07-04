@@ -1,36 +1,56 @@
-import React from 'react'
-import HeroImage from "../assets/heroImage.jpg"
-import { MdOutlineKeyboardArrowRight } from "react-icons/md"
-import { Link } from 'react-scroll'
+import React from "react";
+import HeroImage from "../assets/heroImage.jpg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
-        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
-            <div className='flex flex-col justify-center h-full'>
-                <h2 className='text-4xl sm:text-7xl font-bold text-white'>I'm a Full Stack Developer</h2>
-                <p className='text-gray-500 py-4 max-w-sm'>
-                I am a passionate learner enrolled in TechUp's Software Development Bootcamp, actively pursuing my dream of becoming a proficient software developer. Throughout my journey, I have acquired strong technical skills in Scrum methodology, HTML, CSS, JavaScript, React, and Node.js. Additionally, I have developed a well-rounded set of soft skills and a growth mindset, which are essential in the tech industry, including effective communication and collaboration within a team.
-                </p>
-                <div>
-                    <Link to='portfolio'
-                    smooth
-                    duration={500}
-                    className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r
-                    from-cyan-500 to-blue-500 cursor-pointer'>
-                        Portfolio 
-                        <span className='group-hover:rotate-90 duration-300'>
-                            <MdOutlineKeyboardArrowRight size={25} className="ml-1"/>
-                        </span>
-                    </Link>
-                </div>
-            </div>
-            <div>
-                <img src={HeroImage} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full'/>
-            </div>
+    <div
+      name="home"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+    >
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center h-full">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white">
+            I'm a Full Stack Developer
+          </h2>
+          <p className="text-gray-500 py-4 max-w-sm">
+            "I'm Suthee Lovalek, an enthusiastic learner currently enrolled in
+            TechUp's Software Development Bootcamp. My passion and dedication
+            drive me to become a highly skilled software developer. I've gained
+            strong technical skills in Agile Scrum methodology, HTML, CSS,
+            JavaScript, React, and Node.js, providing a solid foundation for
+            building software solutions. Additionally, I've developed essential
+            soft skills like effective communication and collaborative teamwork,
+            crucial in the dynamic tech industry. With a growth mindset, I
+            embrace challenges as growth opportunities and continuously strive
+            to expand my knowledge and skills."
+          </p>
+          <div>
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r
+                    from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Portfolio
+              <span className="group-hover:rotate-90 duration-300">
+                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              </span>
+            </Link>
+          </div>
         </div>
+        <div>
+          <img
+            src={HeroImage}
+            alt="my profile"
+            className="rounded-2xl mx-auto w-2/3 md:w-full"
+          />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
